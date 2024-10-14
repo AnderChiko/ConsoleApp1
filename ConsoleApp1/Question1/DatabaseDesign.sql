@@ -1,9 +1,9 @@
-﻿To track transactions in SQL, several data structures and concepts can be employed depending on the type of tracking you require, 
-such as auditing, transaction logs, or versioning.
+﻿--To track transactions in SQL, several data structures and concepts can be employed depending on the type of tracking you require, 
+--such as auditing, transaction logs, or versioning.
 
-1. Transaction Table
-A dedicated table where each row represents a transaction, containing details like transaction_id, user_id, timestamp, 
-transaction_type, and other relevant metadata (amount, status, etc.).
+--1. Transaction Table
+--A dedicated table where each row represents a transaction, containing details like transaction_id, user_id, timestamp, 
+--transaction_type, and other relevant metadata (amount, status, etc.).
 
 CREATE TABLE Transactions (
     transaction_id SERIAL PRIMARY KEY,
@@ -14,9 +14,9 @@ CREATE TABLE Transactions (
     transaction_status VARCHAR(20)
 );
 
-2. Audit Logs
-This is used for tracking historical changes to data. You can create audit log tables that capture every operation on specific tables such as INSERT, UPDATE, and DELETE. 
-The log table may capture the before and after states of the row.
+--2. Audit Logs
+--This is used for tracking historical changes to data. You can create audit log tables that capture every operation on specific tables such as INSERT, UPDATE, and DELETE. 
+--The log table may capture the before and after states of the row.
 
 CREATE TABLE Transaction_Audit (
     audit_id SERIAL PRIMARY KEY,
