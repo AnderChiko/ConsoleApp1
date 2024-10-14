@@ -1,0 +1,7 @@
+﻿These methods help ensure efficient space usage when reading and writing settings to a file.
+
+1 Key-value format is the most space-efficient for simple settings.
+
+2 JSON format is compact and supports more complex data structures.
+
+3 Compressed JSON further minimizes file size at the cost of CPU usage for compression and decompression.
